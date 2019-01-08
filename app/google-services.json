@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "879302274145",
+    "firebase_url": "https://bdayreminder-b614b.firebaseio.com",
+    "project_id": "bdayreminder-b614b",
+    "storage_bucket": "bdayreminder-b614b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879302274145:android:7c8665ab823d3120",
+        "android_client_info": {
+          "package_name": "hr.ferit.tumiljanovic.bdayreminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879302274145-ql81accd9jdl3c62lv8iggoktiqhp78b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOtUTJkyT-XnRIJQBSWAQx5AYL1pY8akM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BdayReminder</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="bdayreminder">BdayReminder</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="register_here">REGISTER HERE</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="enter_your_birth_date">Enter your birth date</string>
+    <string name="register">Register</string>
+    <string name="password_error">Password must have  at least 8 characters</string>
+    <string name="email_error" >Invalid email</string>
+    <string name="error_title">Oops</string>
+    <string name="error_message">Something went wrong! Please try again.</string>
+    <string name="general_positive_button">OK</string>
+</resources>
