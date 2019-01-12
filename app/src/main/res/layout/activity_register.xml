@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".registration.RegisterActivity">
+    tools:context=".screen.registration.RegisterActivity">
 
     <ImageView
         android:id="@+id/ivBackArrow"
@@ -12,7 +12,7 @@
         android:layout_height="32dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:src="@drawable/ic_arrow_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,7 +25,8 @@
         android:layout_marginTop="44dp"
         android:fontFamily="@font/montserrat"
         android:hint="@string/first_name"
-        android:inputType="textPassword"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:inputType="text"
         android:textColor="@color/secondaryTextColor"
         android:textSize="@dimen/content_font"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +88,8 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/montserrat"
         android:hint="@string/last_name"
-        android:inputType="textPassword"
+        android:inputType="text"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         android:textColor="@color/secondaryTextColor"
         android:textSize="@dimen/content_font"
         app:layout_constraintEnd_toEndOf="parent"

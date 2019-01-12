@@ -5,12 +5,15 @@
     <application
         android:name=".App"
         android:allowBackup="true"
+        android:configChanges="orientation"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".login.LoginActivity">
+        <activity
+            android:name="hr.ferit.tumiljanovic.bdayreminder.screen.home.HomeActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +25,12 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".registration.RegisterActivity"></activity>
+        <activity
+            android:name="hr.ferit.tumiljanovic.bdayreminder.screen.registration.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hr.ferit.tumiljanovic.bdayreminder.screen.login.LoginActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

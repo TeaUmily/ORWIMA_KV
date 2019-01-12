@@ -26,7 +26,6 @@ import android.content.Context
 import android.support.v7.app.AlertDialog
 import hr.ferit.tumiljanovic.bdayreminder.R
 
-
 fun showGeneralError(from: Context) {
   AlertDialog.Builder(from)
       .setTitle(from.getString(R.string.error_title))
