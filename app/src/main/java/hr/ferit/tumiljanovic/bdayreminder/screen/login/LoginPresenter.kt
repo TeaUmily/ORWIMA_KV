@@ -7,5 +7,4 @@ interface LoginPresenter {
     fun onEmailChanged(email: String)
 
     fun onPasswordChanged(password: String)
-
 }

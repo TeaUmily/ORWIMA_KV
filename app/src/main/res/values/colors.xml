@@ -1,12 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    //Same colors in every theme
+    <color name="dividerColor">#bdbdbd</color>
+    <color name="secondaryTextColor">#757575</color>
+    <color name="white">#fff</color>
+    <color name="primaryTextColor">#212121</color>
+    <color name="recycler_background">#e1e1e1</color>
+
+    //Default theme
     <color name="colorPrimary">#00bcd4</color>
     <color name="colorPrimaryDark">#008ba3</color>
     <color name="colorAccent">#8bc34a</color>
     <color name="colorPrimaryLight">#62efff</color>
-    <color name="dividerColor">#bdbdbd</color>
-    <color name="secondaryTextColor">#757575</color>
-    <color name="primaryTextColor">#212121</color>
-    <color name="white">#fff</color>
+
+    //Mint theme
+    <color name="mintColorPrimary">#76be2f</color>
+    <color name="mintColorPrimaryDark">#289b23</color>
+    <color name="mintColorAccent">#f9a825</color>
+
+    //Lilac theme
+    <color name="lilacColorPrimary">#720d5d</color>
+    <color name="lilacColorPrimaryDark">#430033</color>
+    <color name="lilacColorAccent">#e30425</color>
+
+
+    //Red theme
+    <color name="redColorPrimary">#F44336</color>
+    <color name="redColorPrimaryDark">#D32F2F</color>
+    <color name="redColorAccent">#00BCD4</color>
+
+
+    //Brown theme
+    <color name="brownColorPrimary">#795548</color>
+    <color name="brownColorPrimaryDark">#5D4037</color>
+    <color name="brownColorAccent">#FF5722</color>
+
+    //Gray theme
+    <color name="grayColorPrimary">#9E9E9E</color>
+    <color name="grayColorPrimaryDark">#616161</color>
+    <color name="grayColorAccent">#009688</color>
+
 
 </resources>

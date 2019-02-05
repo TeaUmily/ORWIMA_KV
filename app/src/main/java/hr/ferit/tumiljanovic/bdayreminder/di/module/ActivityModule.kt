@@ -3,10 +3,12 @@ package hr.ferit.tumiljanovic.bdayreminder.di.module
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 import hr.ferit.tumiljanovic.bdayreminder.screen.home.HomeActivity
+import hr.ferit.tumiljanovic.bdayreminder.screen.home.HomeActivityModule
 import hr.ferit.tumiljanovic.bdayreminder.screen.login.LoginActivity
 import hr.ferit.tumiljanovic.bdayreminder.screen.login.di.LoginActivityModule
 import hr.ferit.tumiljanovic.bdayreminder.screen.registration.RegisterActivity
 import hr.ferit.tumiljanovic.bdayreminder.screen.registration.di.RegisterActivityModule
+import hr.ferit.tumiljanovic.bdayreminder.screen.theme_picker.PickThemeActivity
 import hr.ferit.tumiljanovic.moviesjournal.scopes.PerActivity
 
 @Module
@@ -23,7 +25,10 @@ abstract class ActivityModule {
 
 
     @PerActivity
-    @ContributesAndroidInjector()
+    @ContributesAndroidInjector(modules = [HomeActivityModule::class])
     abstract fun provideHomeActivity(): HomeActivity
 
+    @PerActivity
+    @ContributesAndroidInjector()
+    abstract fun providePickThemeActivity(): PickThemeActivity
 }

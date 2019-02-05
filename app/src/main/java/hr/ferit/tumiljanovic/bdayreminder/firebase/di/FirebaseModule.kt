@@ -2,7 +2,7 @@ package hr.ferit.tumiljanovic.bdayreminder.firebase.di
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-import com.raywenderlich.android.whysoserious.firebase.authentication.FirebaseAuthenticationManager
+import hr.ferit.tumiljanovic.bdayreminder.firebase.authentication.FirebaseAuthenticationManager
 import dagger.Module
 import dagger.Provides
 import hr.ferit.tumiljanovic.bdayreminder.firebase.authentication.FirebaseAuthenticationInterface

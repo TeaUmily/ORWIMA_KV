@@ -1,9 +1,7 @@
-package hr.ferit.tumiljanovic.bdayreminder.fragment.home.di
+package hr.ferit.tumiljanovic.bdayreminder.fragment.home
 
 import dagger.Module
 import dagger.Provides
-import hr.ferit.tumiljanovic.bdayreminder.fragment.home.HomeFragment
-import hr.ferit.tumiljanovic.bdayreminder.fragment.home.HomeView
 import hr.ferit.tumiljanovic.moviesjournal.scopes.PerActivity
 
 
@@ -16,6 +14,6 @@ class HomeFragmentModule {
 
     @PerActivity
     @Provides
-    fun provideHomeFragmentView(homeFragment: HomeFragment) : HomeView = homeFragment
+    fun provideHomeFragmentView(homeFragment: HomeFragment) : HomeFragmentView = homeFragment
 
 }

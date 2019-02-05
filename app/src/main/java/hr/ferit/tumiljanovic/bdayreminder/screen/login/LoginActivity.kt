@@ -31,7 +31,6 @@ class LoginActivity : BaseActivity(), LoginView {
         bLogin.setOnClickListener { loginPresenter.onLoginClick() }
     }
 
-
     override fun showPasswordError() {
         etPassword.error = getString(R.string.password_error)    }
 

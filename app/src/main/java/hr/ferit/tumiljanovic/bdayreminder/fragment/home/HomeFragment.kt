@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.fragment_home.viewPager
 import kotlinx.android.synthetic.main.fragment_home.tabLayout
 import javax.inject.Inject
 
-class HomeFragment @Inject constructor() : BaseFragment(), HomeView {
+class HomeFragment @Inject constructor() : BaseFragment(), HomeFragmentView {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

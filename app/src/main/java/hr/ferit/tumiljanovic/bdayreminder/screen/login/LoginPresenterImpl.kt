@@ -6,7 +6,7 @@ import hr.ferit.tumiljanovic.bdayreminder.firebase.authentication.FirebaseAuthen
 import hr.ferit.tumiljanovic.bdayreminder.model.LoginRequest
 import javax.inject.Inject
 
-class LoginPresenterImpl @Inject constructor(var loginView: LoginView, private val authentication: FirebaseAuthenticationInterface) : LoginPresenter {
+class LoginPresenterImpl @Inject constructor(private var loginView: LoginView, private val authentication: FirebaseAuthenticationInterface) : LoginPresenter {
 
 
     private val loginRequest = LoginRequest()

@@ -1,6 +1,7 @@
 package hr.ferit.tumiljanovic.bdayreminder.di
 
 import android.app.Application
+import android.support.v7.widget.RecyclerView
 import dagger.Component
 import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
@@ -23,3 +24,4 @@ import javax.inject.Singleton
 interface AppComponent : AndroidInjector<Application> {
     fun inject(app: App)
 }
+

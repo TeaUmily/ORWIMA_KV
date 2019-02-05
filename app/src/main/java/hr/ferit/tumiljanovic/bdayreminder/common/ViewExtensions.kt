@@ -22,15 +22,10 @@
 
 package hr.ferit.tumiljanovic.bdayreminder.common
 
-import android.support.v4.view.ViewPager
 import android.text.Editable
 import android.text.TextWatcher
-import android.view.View
 import android.widget.EditText
 
-inline fun View.onClick(crossinline onClickHandler: () -> Unit) {
-  setOnClickListener { onClickHandler() }
-}
 
 inline fun EditText.onTextChanged(crossinline onTextChangeHandler: (String) -> Unit) {
   addTextChangedListener(object : TextWatcher {
@@ -40,14 +35,5 @@ inline fun EditText.onTextChanged(crossinline onTextChangeHandler: (String) -> U
     override fun onTextChanged(input: CharSequence?, start: Int, before: Int, count: Int) {
       onTextChangeHandler(input?.toString() ?: "")
     }
-  })
-}
-
-inline fun ViewPager.onPageChange(crossinline onPageChangeHandler: (Int) -> Unit) {
-  addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
-    override fun onPageScrollStateChanged(state: Int) = Unit
-    override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) = Unit
-
-    override fun onPageSelected(position: Int) = onPageChangeHandler(position)
   })
 }

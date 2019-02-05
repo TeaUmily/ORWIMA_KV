@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import hr.ferit.tumiljanovic.bdayreminder.App
 import hr.ferit.tumiljanovic.bdayreminder.R
+import hr.ferit.tumiljanovic.bdayreminder.fragment.calendar.CalendarFragment
 import hr.ferit.tumiljanovic.bdayreminder.fragment.upcoming.UpcomingFragment
 
 class PagerAdapter(fragmentManager: FragmentManager) : FragmentStatePagerAdapter(fragmentManager) {
@@ -15,7 +16,7 @@ class PagerAdapter(fragmentManager: FragmentManager) : FragmentStatePagerAdapter
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> UpcomingFragment()
-            1 -> UpcomingFragment()
+            1 -> CalendarFragment()
             else -> UpcomingFragment()
         }
 

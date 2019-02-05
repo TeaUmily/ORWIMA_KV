@@ -22,7 +22,10 @@
 
 package hr.ferit.tumiljanovic.bdayreminder.firebase.database
 
+import android.net.Uri
+import android.util.Log
 import com.google.firebase.database.*
+import hr.ferit.tumiljanovic.bdayreminder.common.isBirthDateValid
 import hr.ferit.tumiljanovic.bdayreminder.model.User
 import javax.inject.Inject
 
@@ -31,11 +34,36 @@ private const val KEY_USER = "user"
 
 class FirebaseDatabaseManager @Inject constructor(private val database: FirebaseDatabase) : FirebaseDatabaseInterface {
 
-
     override fun createUser(id: String, firstName: String, lastName: String, email: String, password: String, birthDate: String) {
-        val user = User(id, firstName, lastName, email, birthDate, password )
+        val user = User(id, firstName, lastName, email, birthDate, password)
 
         database.reference.child(KEY_USER).child(id).setValue(user)
+    }
+
+    override fun getProfile(id: String, onResult: (User) -> Unit) {
+        database.reference
+                .child(KEY_USER)
+                .child(id)
+                .addValueEventListener(object : ValueEventListener {
+                    override fun onDataChange(dataSnapshot: DataSnapshot) {
+                        val user = dataSnapshot.getValue(User::class.java)
+                        user?.run { onResult(user) }
+                    }
+
+                    override fun onCancelled(databaseError: DatabaseError) {
+                        Log.w("Firebase database manager ->", "loadPost:onCancelled", databaseError.toException())
+                    }
+                })
+    }
+
+    override fun addProfileImage(uri: Uri, userId: String) {
+        database.reference.child(KEY_USER).child(userId).child("image").setValue(uri.toString())
+    }
+
+    override fun removeUser(id: String, onResult: (Boolean) -> Unit) {
+        database.reference.child(KEY_USER).child(id).removeValue().addOnCompleteListener {
+            onResult(it.isComplete && it.isSuccessful)
+        }
     }
 
 }

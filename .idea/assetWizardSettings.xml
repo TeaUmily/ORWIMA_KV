@@ -3,6 +3,11 @@
   <component name="WizardSettings">
     <option name="children">
       <map>
+        <entry key="imageWizard">
+          <value>
+            <PersistentState />
+          </value>
+        </entry>
         <entry key="vectorWizard">
           <value>
             <PersistentState>
@@ -18,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_home_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_brightness_1_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,10 +33,10 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="757575" />
-                            <entry key="opacityPercent" value="95" />
-                            <entry key="outputName" value="ic_home" />
-                            <entry key="sourceFile" value="C:\Users\Terezija\Downloads\img_325788.svg" />
+                            <entry key="color" value="c01719" />
+                            <entry key="outputName" value="ic_red_dot" />
+                            <entry key="overrideSize" value="true" />
+                            <entry key="sourceFile" value="C:\Users\Terezija\Desktop\preuzmi (1).svg" />
                           </map>
                         </option>
                       </PersistentState>

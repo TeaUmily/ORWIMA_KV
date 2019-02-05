@@ -13,14 +13,15 @@
 
         <android.support.design.widget.AppBarLayout
             android:id="@+id/appBar"
+            app:elevation="0dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
+                android:background="?android:attr/colorPrimaryDark"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                app:layout_scrollFlags="scroll" />
+                android:layout_height="30dp"/>
         </android.support.design.widget.AppBarLayout>
 
         <FrameLayout

@@ -22,9 +22,19 @@
 
 package hr.ferit.tumiljanovic.bdayreminder.firebase.database
 
+import android.net.Uri
+import hr.ferit.tumiljanovic.bdayreminder.model.User
+
+
 
 interface FirebaseDatabaseInterface {
 
     fun createUser(id: String, firstName: String, lastName: String, email: String, password: String, birthDate: String)
+
+    fun getProfile(id: String, onResult: (User) -> Unit)
+
+    fun addProfileImage(uri: Uri, userId: String)
+
+    fun removeUser(id: String, onResult: (Boolean) -> Unit)
 
 }

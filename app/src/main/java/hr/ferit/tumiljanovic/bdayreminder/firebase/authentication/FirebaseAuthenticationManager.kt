@@ -20,7 +20,7 @@
  * THE SOFTWARE.
  */
 
-package com.raywenderlich.android.whysoserious.firebase.authentication
+package hr.ferit.tumiljanovic.bdayreminder.firebase.authentication
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest
@@ -56,5 +56,12 @@ class FirebaseAuthenticationManager @Inject constructor(private val authenticati
     authentication.signOut()
 
     onResult()
+  }
+
+  override fun deleteAccount(onResult: (Boolean) -> Unit) {
+    authentication.currentUser?.delete()?.addOnCompleteListener{
+      onResult(it.isComplete && it.isSuccessful)
+    }
+
   }
 }
